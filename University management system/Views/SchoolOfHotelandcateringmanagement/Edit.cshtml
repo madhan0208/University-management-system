@@ -1,0 +1,70 @@
+﻿@model SchoolOfHotelandCateringManagement
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Profile</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="RegisterNumber"></label>
+            <input asp-for="RegisterNumber" class="form-control" />
+            <span asp-validation-for="RegisterNumber" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Course"></label>
+            <input asp-for="Course" class="form-control" />
+            <span asp-validation-for="Course" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="DateOfBirth"></label>
+            <input asp-for="DateOfBirth" class="form-control" />
+            <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Gender"></label>
+            <input asp-for="Gender" class="form-control" />
+            <span asp-validation-for="Gender" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="PhoneNo"></label>
+            <input asp-for="PhoneNo" class="form-control" />
+            <span asp-validation-for="PhoneNo" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="BloodGroup"></label>
+            <input asp-for="BloodGroup" class="form-control" />
+            <span asp-validation-for="BloodGroup" class="text-danger"></span>
+
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+        <a asp-controller="SchoolOfHotelandCateringManagement" asp-action="Index" class="btn btn-secondary">Back To List</a>
+    </div>
+</form>
+
+@section Scripts   {
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

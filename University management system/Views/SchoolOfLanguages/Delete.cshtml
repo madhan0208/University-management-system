@@ -1,0 +1,72 @@
+﻿@model SchoolOfLanguages
+
+<form method="post" asp-action="DeletePost">
+    <input asp-for="Id" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Delete Profile</h2>
+            <hr />
+        </div>
+      
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" disabled class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="RegisterNumber"></label>
+            <input asp-for="RegisterNumber" disabled class="form-control" />
+            <span asp-validation-for="RegisterNumber" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Course"></label>
+            <input asp-for="Course" disabled class="form-control" />
+            <span asp-validation-for="Course" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="DateOfBirth"></label>
+            <input asp-for="DateOfBirth" disabled class="form-control" />
+            <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Gender"></label>
+            <input asp-for="Gender" disabled class="form-control" />
+            <span asp-validation-for="Gender" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" disabled class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="PhoneNo"></label>
+            <input asp-for="PhoneNo" disabled class="form-control" />
+            <span asp-validation-for="PhoneNo" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" disabled class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="BloodGroup"></label>
+            <input asp-for="BloodGroup" disabled class="form-control" />
+            <span asp-validation-for="BloodGroup" class="text-danger"></span>
+
+        </div>
+        <button type="submit" class="btn btn-danger" style="width:150px">Delete</button>
+        <a asp-controller="SchoolOfLanguages" asp-action="Index" class="btn btn-secondary">Back To List</a>
+    </div>
+</form>
+
+@section Scripts   {
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
